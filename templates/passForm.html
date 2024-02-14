@@ -1,0 +1,23 @@
+{{define "passForm"}}
+<div class="container"><br>
+  <div class="jumbotron">
+    <h1>Cambio de Password</h1>
+    <p>Por favor ingrese los datos solicitados para proceder a actualizar su password</p><hr>
+        <form action="index.html">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="user">
+        </div>
+        <div class="form-group">
+            <label for="pwd_1">Password:</label>
+            <input type="password" class="form-control" id="pwd_1" name="pwd_1">
+        </div>
+        <div class="form-group">
+            <label for="pwd_2">Repita Password:</label>
+            <input type="password" class="form-control" id="pwd_1" name="pwd_1">
+        </div>
+        <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Actualizar</button>
+        </form>
+    </div>
+</div>
+{{end}}

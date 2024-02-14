@@ -1,0 +1,44 @@
+{{define "regForm"}}
+<div class="container"><br>
+
+  <div class="jumbotron">
+    <h1>Registro de Usuario</h1>
+    <p>Por favor ingrese los datos solicitados para proceder a crear su usuario</p><hr>
+        <form action="/registrarse" method="POST">
+        <div class="form-group">
+            <label for="nombre_apellido">Nomre y Apellido:</label>
+            <input type="text" class="form-control" id="nombre-apellido" name="nombre_apellido">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="celular">Tel. Celular:</label>
+            <input type="text" class="form-control" id="celular" name="celular">
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <input type="text" class="form-control" id="direccion" name="direccion">
+        </div>
+         <div class="form-group">
+            <label for="localidad">Localidad:</label>
+            <input type="text" class="form-control" id="localidad" name="localidad">
+        </div>
+         <div class="form-group">
+            <label for="provincia">Provincia:</label>
+            <input type="text" class="form-control" id="provincia" name="provincia">
+        </div>
+        <div class="form-group">
+            <label for="pwd_1">Password:</label>
+            <input type="password" class="form-control" id="pwd_1" name="pwd_1">
+        </div>
+        <div class="form-group">
+            <label for="pwd_2">Repita Password:</label>
+            <input type="password" class="form-control" id="pwd_2" name="pwd_2">
+        </div>
+        <button type="submit" class="btn btn-primary" name="registrar" >Registrarse</button>
+        </form>
+    </div><hr>
+
+{{end}}
