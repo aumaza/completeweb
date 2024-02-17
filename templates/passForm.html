@@ -3,10 +3,10 @@
   <div class="jumbotron">
     <h1>Cambio de Password</h1>
     <p>Por favor ingrese los datos solicitados para proceder a actualizar su password</p><hr>
-        <form action="index.html">
+        <form action="/password" method="POST">
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="user">
+            <label for="user">Email:</label>
+            <input type="email" class="form-control" id="user" name="user">
         </div>
         <div class="form-group">
             <label for="pwd_1">Password:</label>
@@ -14,10 +14,10 @@
         </div>
         <div class="form-group">
             <label for="pwd_2">Repita Password:</label>
-            <input type="password" class="form-control" id="pwd_1" name="pwd_1">
+            <input type="password" class="form-control" id="pwd_2" name="pwd_2">
         </div>
         <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Actualizar</button>
         </form>
+    </div><hr>
     </div>
-</div>
 {{end}}
