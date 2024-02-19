@@ -15,11 +15,9 @@ func homeHandler(w http.ResponseWriter, r *http.Request){
     user :=  r.PostFormValue("user");
     password := r.PostFormValue("pwd");
 
-    tmpl.ExecuteTemplate(w, "index.html", nil);
+   // tmpl.ExecuteTemplate(w, "index.html", nil);
 
-    if r.Method != http.MethodPost {
-            return;
-    }
+    if r.Method == http.MethodPost {
 
         if((len(user) == 0) || (len(password) == 0)) {
             fmt.Println("Debe ingresar sus datos...");
@@ -67,4 +65,8 @@ func homeHandler(w http.ResponseWriter, r *http.Request){
                             }
 
         }
+    }
+
+
+        tmpl.ExecuteTemplate(w, "index.html", nil);
 }
