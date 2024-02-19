@@ -2,11 +2,11 @@
 <div class="container"><br>
   <div class="jumbotron">
     <h1>Bienvenido/a</h1>
-    <p>Por favor ingrese sus datos para ingresar a la aplicación</p><hr>
-        <form action="index.html">
+    <p>Por favor tipee sus datos para ingresar a la aplicación</p><hr>
+        <form action="/" method="POST">
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="user">
+            <label for="user">Email:</label>
+            <input type="email" class="form-control" id="user" name="user">
         </div>
         <div class="form-group">
             <label for="pwd">Password:</label>
@@ -14,7 +14,7 @@
         </div>
         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Ingresar</button>
         </form>
-    </div>
+    </div><hr>
 </div>
 {{end}}
 

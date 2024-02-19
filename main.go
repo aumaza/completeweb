@@ -21,6 +21,7 @@ func main () {
         http.HandleFunc("/", homeHandler);
         http.HandleFunc("/password", passHandler);
         http.HandleFunc("/registrarse", registroHandler);
+        http.HandleFunc("/dash", dashHandler);
         http.ListenAndServe(":3000", nil);
 
 }

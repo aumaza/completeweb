@@ -6,7 +6,7 @@ echo "Compilando ejecutable para GNU/Linux..."
 echo "==================================================================================="
 if [[ ! -f mybills ]]
 then
-GOOS=linux GOARCH=amd64 go build -o mybills main.go home.go registro.go password.go connection.go usuarios.go tools.go registro_messages.go password_messages.go
+GOOS=linux GOARCH=amd64 go build -o mybills main.go home.go registro.go password.go connection.go usuarios.go tools.go registro_messages.go password_messages.go dash.go
 echo "Ejecutable creado con éxito..."
 echo "==================================================================================="
     echo "Desea ejecutar el programa? (s/n)"
