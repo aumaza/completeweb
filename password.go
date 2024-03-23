@@ -11,6 +11,7 @@ func passHandler(w http.ResponseWriter, r *http.Request){
     db = connectionDB();
     defer db.Close();
 
+
     user :=  r.PostFormValue("user");
     Password_1 := r.PostFormValue("pwd_1");
     Password_2 := r.PostFormValue("pwd_2");
